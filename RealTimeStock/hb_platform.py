@@ -32,3 +32,16 @@ def figure_design(ax):
     ax.spines['left'].set_color('#808080')
     ax.spines['right'].set_color('#808080')
     
+
+# Convert strings to numbers
+def string_to_number(df, column):
+    if isinstance(df.iloc[0, df.columns.get_loc(column)], str):
+        df[column] = df[column].str.replace(',', ' ')
+        df[column] = df[column].astype(float)
+    return df
+
+
+# Function to perform the data processing
+
+
+# Function to animate and visualize the data
