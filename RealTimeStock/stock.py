@@ -26,7 +26,7 @@ def real_time_price(stock_code):
         web_content = BeautifulSoup(r.text, 'lxml')
         texts = web_content_div(web_content, 'My(6px) Pos(r) smartphone_Mt(6px)')
         if texts != []:
-            price, change = texts[0], texts[1] # [0] = price, [1] = rice changes
+            price, change = texts[0], texts[1] # [0] = price, [1] = price changes
         else:
             price, change = [], []
 
