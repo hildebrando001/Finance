@@ -22,5 +22,13 @@ ax9 = fig.add_subplot(gs[5, 0:4])
 
 Stock = ['BRK-B', 'PYPL', 'TWTR', 'AAPL', 'AMZN', 'MSFT', 'FB']
 
-
-plt.show()
+# Make nice plot
+def figure_design(ax):
+    ax.set_facecolor('#091217')
+    ax.tick_params(axis='both', labelsize=14, colors='white')
+    ax.ticklabel_format(useOffset=False)
+    ax.spines['bootom'].set_color('#808080')
+    ax.spines['top'].set_color('#808080')
+    ax.spines['left'].set_color('#808080')
+    ax.spines['right'].set_color('#808080')
+    
